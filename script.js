@@ -41,3 +41,19 @@ while(true) {
         break; 
     }
 }; 
+
+//second part 
+let hours = Math.floor((Math.random()*100) +1);
+let wage = 17.5;
+
+let paycheck = hours * wage; 
+console.log(paycheck); 
+ 
+
+if (hours > 40) {
+    paycheck = paycheck*1.5;
+    console.log(`with overtime your paycheck will be $${paycheck}`);
+} else {
+    console.log(`without overtime your paycheck will be $${paycheck}`); 
+}
+document.write(`Your paycheck will be $${paycheck}`);
